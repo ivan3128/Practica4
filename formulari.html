@@ -10,11 +10,11 @@
     <form action="formulari_enviat.html">
 
         <h1>Comença a editar el noticiari ITIC Barcelona amb nosaltres!</h1>
-        <p class="parr" >Dades personals:</p>
+        <p class="parr">Dades personals:</p> <!--classe parr serveix per tots els <p> excepte el de textarea -->
         <br>
         <label for="nom">Nom:</label>
         <br>
-        <input type="text" id="nom" required class="tcurt">
+        <input type="text" id="nom" required class="tcurt"> <!--classe tcurt serveix per inputs nom i mail -->
         <br>
         <br>
         <label for="mail">Correu:</label>
@@ -29,14 +29,14 @@
         <br>
         <p class="parr">Estudis previs:</p>
         <br>
-        <label for="expPrev">Experiencia Previa:</label>
+        <label for="expPrev">Experiencia Previa:</label> <!--desplegable -->
         <select id="expPrev" required>
             <option value="si">Si</option>
             <option value="no">No</option>
         </select>
         <br>
-        <p class="parr">En cas afirmatiu, selecciona el teu nivell:</p>
-        <input type="radio" name="nivell" id="ESO">
+        <p class="parr">En cas afirmatiu, selecciona el teu nivell:</p> <!--radio buttons -->
+        <input type="radio" name="nivell" id="ESO" checked>
         <label for="ESO">ESO</label>
         <br>
         <input type="radio" name="nivell" id="Bachillerat">
@@ -45,21 +45,21 @@
         <input type="radio" name="nivell" id="Grau_Mig">
         <label for="Grau_Mig">Grau Mig</label>
         <br>
-        <p class="parr">En cas afirmatiu, selecciona els camps en els que tens experiencia:</p>
+        <p class="parr">En cas afirmatiu, selecciona els camps en els que tens experiencia:</p> <!--checkboxes -->
         <input type="checkbox" id="programació" name="camps1">
         <label for="programació">Programació</label>
         <br>
         <input type="checkbox" id="xarxes" name="camps2">
         <label for="xarxes">Xarxes</label>
         <br>
-        <input type="checkbox" id="sistemes" name="camps3">
+        <input type="checkbox" id="sistemes" name="camps3" checked>
         <label for="sistemes">Sistemes</label>
         <br>
         <p><label for="descripcio">Si tens més experiencia en el sector i la vols compartir amb nosaltres, pots afegir-la aquí:</label></p>
         <textarea name="descripcio" id="descripcio" cols="30" rows="10" placeholder="Afegeix tot tipus de estudis previs que creguis convenients compartir; Ex: ASIX, DAM, DAW..."></textarea>
         <br>
         <br>
-        <input type="submit" value="Envia" class="button">
+        <input type="submit" value="Envia" class="button"> <!--boto a formulari_enviat.html -->
         
         
       
