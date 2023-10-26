@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulari.css">
+    <title>Form petició noticiari</title>
+</head>
+<body>
+    <form action="formulari_enviat.html">
+
+        <h1>Comença a editar el noticiari ITIC Barcelona amb nosaltres!</h1>
+        <p class="parr" >Dades personals:</p>
+        <br>
+        <label for="nom">Nom:</label>
+        <br>
+        <input type="text" id="nom" required class="tcurt">
+        <br>
+        <br>
+        <label for="mail">Correu:</label>
+        <br>
+        <input type="text" id="mail" required class="tcurt">
+        <br>
+        <br>
+        <label for="edat">Edat:</label>
+        <br>
+        <input type="number" id="edat" required>
+        <br>
+        <br>
+        <p class="parr">Estudis previs:</p>
+        <br>
+        <label for="expPrev">Experiencia Previa:</label>
+        <select id="expPrev" required>
+            <option value="si">Si</option>
+            <option value="no">No</option>
+        </select>
+        <br>
+        <p class="parr">En cas afirmatiu, selecciona el teu nivell:</p>
+        <input type="radio" name="nivell" id="ESO">
+        <label for="ESO">ESO</label>
+        <br>
+        <input type="radio" name="nivell" id="Bachillerat">
+        <label for="Bachillerat">Bachillerat</label>
+        <br>
+        <input type="radio" name="nivell" id="Grau_Mig">
+        <label for="Grau_Mig">Grau Mig</label>
+        <br>
+        <p class="parr">En cas afirmatiu, selecciona els camps en els que tens experiencia:</p>
+        <input type="checkbox" id="programació" name="camps1">
+        <label for="programació">Programació</label>
+        <br>
+        <input type="checkbox" id="xarxes" name="camps2">
+        <label for="xarxes">Xarxes</label>
+        <br>
+        <input type="checkbox" id="sistemes" name="camps3">
+        <label for="sistemes">Sistemes</label>
+        <br>
+        <p><label for="descripcio">Si tens més experiencia en el sector i la vols compartir amb nosaltres, pots afegir-la aquí:</label></p>
+        <textarea name="descripcio" id="descripcio" cols="30" rows="10" placeholder="Afegeix tot tipus de estudis previs que creguis convenients compartir; Ex: ASIX, DAM, DAW..."></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Envia" class="button">
+        
+        
+      
+    </form>
